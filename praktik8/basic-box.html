@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1</title>
+
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .course {
+            border: 1px solid #444;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            background-color: beige;
+        }
+
+        .courses {
+            border: 1px solid #0000ff;
+            height: 80vh;
+
+            /* set flex container */
+            display: flex;
+
+            /* mengubah axes */
+            flex-direction: row-reverse;
+
+            /* mengatur align main axis */
+            justify-content: space-between;
+
+            /* mengatur align cross axis */
+            /* align-items: flex-end; */
+
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1>Daftar Courses</h1>
+    <br>
+    <div class="courses">
+        <p class="course">
+            Belajar HTML
+        </p>
+
+        <p class="course">
+            Belajar CSS
+        </p>
+
+        <p class="course">
+            Belajar Javascript
+        </p>
+
+        <p class="course">
+            Belajar Ecmascript
+        </p>
+
+        <p class="course">
+            Belajar PHP
+        </p>
+
+        <p class="course">
+            Belajar Mysql
+        </p>
+
+        <p class="course">
+            Belajar PosgreSQL
+        </p>
+
+        <p class="course">
+            Belajar MongoDB
+        </p>
+    </div>
+
+</body>
+
+</html>
